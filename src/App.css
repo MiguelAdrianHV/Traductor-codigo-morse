@@ -1,0 +1,75 @@
+/* import montserrat font*/
+@import url('http://fonts.cdnfonts.com/css/montserrat');
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+.App {
+	display: inline-flex;
+	flex-flow: column;
+	width: 90%;
+	max-width: 800px;
+	text-align: left;
+}
+
+body {
+	background: #323050;
+	color: white;
+	text-align: center;
+}
+
+h1 {
+  	text-align: center;
+}
+
+textarea {
+	font-size: 16px;
+	padding: 15px;
+	color: #f2f2f2;
+	background: #7A7265;
+	border: none;
+	height: 150px;
+	width: 100%;
+	box-sizing: border-box;
+	outline-color: #f2f2f2;
+}
+
+::placeholder {
+	color: #1f1f1f;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 15px;
+	padding-left: 250px;
+	font-size: 15pt;
+}
+@media screen and (max-width: 770px)
+{
+	footer {
+		padding-left: 200px;
+		font-size: 15pt;
+	}
+}
+@media screen and (max-width: 430px)
+{
+	footer {
+		padding-left: 75px;
+		font-size: 12pt;
+	}
+}
+@media screen and (max-width: 380px)
+{
+	footer {
+		padding-left: 50px;
+		font-size: 12pt;
+	}
+}
+@media screen and (max-width: 325px)
+{
+	footer {
+		padding-left: 25px;
+		font-size: 12pt;
+	}
+}
