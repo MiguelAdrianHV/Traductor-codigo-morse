@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import {Alfabeto} from "./components/Alfabeto";
+import {Morse} from "./components/Morse";
 
-function App() {
+const App = () => {
+  const [value, setValue] = useState('');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className = "App">
+      <h1>Traductor de código morse</h1>
+      <Alfabeto value={value} setValue={setValue} />
+      <Morse value = {value} setValue={setValue}/>
+      <footer>
+
+      </footer>
     </div>
   );
 }
